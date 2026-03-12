@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #0A2540;     
+    --accent-color: #0066FF;      
+    --text-main: #334155;         
+    --bg-page: #F3F4F6;          
+    --bg-container: #FFFFFF;      
+    --border-light: #E2E8F0;      
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.8; 
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: var(--bg-container);
+    padding: 50px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid var(--accent-color);
+}
+
+h1, h2, h3, .subheading, .slogan {
+    font-family: 'Roboto', sans-serif; 
+    color: var(--primary-color);
+}
+
+.page-header {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.subheading {
+    font-size: 1rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.text-block {
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight-section {
+    background-color: #F8FAFC;
+    padding: 25px 30px;
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
+}
+
+.info-box {
+    background-color: #ec5b62; /* Very light blue */
+    border-left: 5px solid var(--accent-color);
+    padding: 25px 30px;
+    margin: 40px 0;
+}
+
+.info-box h3 {
+    color: var(--accent-color);
+}
+
+.info-box p {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.page-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-light);
+}
+
+.slogan {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .highlight-section, .info-box {
+        padding: 20px;
+    }
+}
